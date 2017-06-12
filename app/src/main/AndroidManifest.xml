@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.muhammadhidayah.apps">
+
+    <application
+        android:name=".QuizApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/topologi"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/topologi"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Tentang" />
+        <activity android:name=".Konten" />
+        <activity android:name=".Cari" />
+        <activity
+            android:name=".Detail_Konten"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Quiz" />
+        <activity android:name=".QuestionActivity" />
+        <activity android:name=".EndGameActivity" />
+        <activity android:name=".AnswerActivity" />
+    </application>
+
+</manifest>

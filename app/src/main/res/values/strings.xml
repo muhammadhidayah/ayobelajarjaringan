@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Ayoo Belajar Jaringan</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_tentang">Tentang</string>
+
+    <string name="judul">Aplikasi Topologi Dan Subnetting</string>
+    <string name="description">Aplikasi Topologi dan Subnetting ini dibuat untuk mempermudah pelajar/mahasiswa di bidang Jaringan Komputer dalam mempelajari materi Topologi Jaringan dan Subnetting.</string>
+    <string name="description1">Aplikasi ini dikembangkan oleh:</string>
+    <string name="nama">Muhammad Hidayah (14.11.7900)</string>
+    <string name="copyright">Copyright © muhammad30hidayah696@gmail.com </string>
+    <string name="quiz">Menu ini adalah fitur Quiz yang akan menguji kemampuan anda mengenai Topologi Jaringan dan Subnetting. Ada 10 soal yang harus anda kerjakan. Klik tombol "Play" untuk memulai quiz.</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:id="@+id/question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/thumbnail"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="2.70"
+                        android:padding="8dp"
+                        android:text="Pertanyaan disini...."
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <RadioGroup
+                android:id="@+id/group1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/Button01"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                android:paddingBottom="20dp" >
+
+                <RadioButton
+                    android:id="@+id/answer1"
+                    android:checked="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/answer2"
+                    android:checked="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/answer3"
+                    android:checked="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/answer4"
+                    android:checked="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/Button01"
+                android:layout_alignParentLeft="true"
+                android:onClick="onClickNext"
+                android:paddingBottom="5dip"
+                android:text="Next"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@id/Button01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:onClick="onClickExit"
+                android:paddingBottom="5dip"
+                android:paddingTop="5dip"
+                android:layout_marginTop="10dp"
+                android:text="Exit Quiz"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_topologi"
+            android:icon="@drawable/ic_device_hub_black_24dp"
+            android:title="Topologi" />
+        <item
+            android:id="@+id/nav_subnetting"
+            android:icon="@drawable/ic_tune_black_24dp"
+            android:title="Subnetting" />
+        <item
+            android:id="@+id/nav_quiz"
+            android:icon="@drawable/ic_question_answer_black_24dp"
+            android:title="Quiz" />
+    </group>
+
+    <item android:title="Lainnya">
+        <menu>
+            <item
+                android:id="@+id/nav_tentang"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="Tentang" />
+        </menu>
+    </item>
+
+</menu>
